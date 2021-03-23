@@ -1,35 +1,4 @@
 (function($){
-//#header .nav li ul.submenu {display:none}
-//선택자 {속성: 속성값}
-
-//$(".submenu").css("display","block");
-//선택자.메서드(속성,속성값)
-
-//첫번째 유형
-// $(".nav > ul > li").mouseover(function(){   //li에 마우스 오버했을 때
-//     $(this).find(".submenu").css("display","block");
-// });
-
-// $(".nav > ul > li").mouseout(function(){   //li에 마우스 아웃했을 때
-//     $(this).find(".submenu").css("display","none");
-// });
-
-//두번째 유형
-// $(".nav > ul > li").mouseover(function(){   //li에 마우스 오버했을 때
-//     $(".nav > ul > li").find(".submenu").css("display","block");
-// });
-
-// $(".nav > ul > li").mouseout(function(){   //li에 마우스 아웃했을 때
-//     $(".nav > ul > li").find(".submenu").css("display","none");
-// });
-
-// $(".nav > ul > li").mouseover(function(){
-//     $(this).find(".submenu").stop().show(500);
-// });
-
-// $(".nav > ul > li").mouseout(function(){
-//     $(this).find(".submenu").stop().hide(500);
-// });
 
 //첫번째 유형
 $(".nav > ul > li").mouseover(function(){
@@ -39,22 +8,6 @@ $(".nav > ul > li").mouseover(function(){
 $(".nav > ul > li").mouseout(function(){
     $(this).find(".submenu").stop().slideUp(200);
 });
-
-//두번째 유형
-//$(".nav > ul > li").mouseover(function(){
-//    $(".nav > ul > li").find(".submenu").stop().slideDown(200);
-//});
-
-//$(".nav > ul > li").mouseout(function(){
-//    $(".nav > ul > li").find(".submenu").stop().slideUp(200);
-//});
-
-
-//이미지 슬라이드
-//이미지를 top으로 이미지의 height값 만큼 설정
-
-//$(".slideList").css("top","-300px");
-//$(".slideList").animate({"top":"-300px"},4000);
 
 //현재 이미지 = 0    -> top:  0;
 //두번째 이미지 = 1   -> top: -378px; 
